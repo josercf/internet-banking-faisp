@@ -29,6 +29,7 @@ namespace InternetBanking.Controllers
             //ser maior ou igual a 16
             var idadeValida = model.ValidarIdade();
 
+
             if(idadeValida == false)
             {
                 ModelState.AddModelError("DataNascimento", "É necessário a idade maior ou igual a 16 anos");
